@@ -1,0 +1,222 @@
+{
+    "en": {
+        "brand_name": "Kalado",
+        "currency": "Toman",
+        "general_inputs": {
+            "email": "Email",
+            "password": "Password",
+            "password_repeat": "Password Repeat",
+            "phone_number": "Phone Number",
+            "first_name": "First Name",
+            "last_name": "Last Name",
+            "price": "Price",
+            "date": "Date",
+            "code": "Verification Code",
+            "add_image": "Add Image",
+            "description": "Description",
+            "category": "Category",
+            "no_option": "No option",
+            "token": "Token"
+        },
+        "navbar": {
+            "home_link": "Home",
+            "login_link": "Login/Register",
+            "reservation_link": "Order",
+            "contact_link": "Contact Us"
+        },
+        "login_page": {
+            "title": "Login",
+            "login_with_password": "Login with password",
+            "login_with_sms": "Login with OTP",
+            "login_btn": "Login",
+            "send_sms": "Send SMS"
+        },
+        "category": {
+            "title": "Categories",
+            "one": "Real Estate",
+            "two": "Transportation",
+            "three": "Home & Kitchen",
+            "four": "Digital Stuff",
+            "five": "Entertainment",
+            "six": "Personal Stuff",
+            "seven": "Others"
+        },
+        "filter": {
+            "title": "Filters",
+            "price": "Price",
+            "min_price": "Minimum",
+            "max_price": "Maximum",
+            "ad_date": "Ad Date",
+            "one_day": "One Day",
+            "one_week": "One Week",
+            "one_month": "One Month",
+            "apply": "Apply Filter"
+        },
+        "sort": {
+            "newest": "Newest",
+            "oldest": "Oldest",
+            "most_expensive": "Most Expensive",
+            "cheapest": "Cheapest"
+        },
+        "error": {
+            "general": "A system error occurred, Please try again later.",
+            "input": {
+                "invalid_email": "Enter a valid email.",
+                "invalid_password": {
+                    "min_length": "At least 8 characters are required.",
+                    "has_number": "At least 1 number is required.",
+                    "has_uppercase": "At least 1 capital letter is required.",
+                    "has_special_char": "At least 1 special character is required."
+                },
+                "invalid_phone_number": "Enter a valid phone number.",
+                "invalid_image": {
+                    "max_size": "The file size should not exceed 1 MB.",
+                    "invalid_type": "Only image files are allowed."
+                }
+            },
+            "server": {
+                "401": "You are not authorized to perform this action.",
+                "403": "Access denied",
+                "404": "The requested resource was not found.",
+                "409": "This email is already registered.",
+                "500": "An unexpected error occurred. Please try again later."
+            }
+        },
+        "success": {
+            "signup": "Registered successfully. Please verify your email.",
+            "code_verification": "Your email verified successfully.",
+            "login": "You are welcome!",
+            "reset_password": "Your password changed successfully.",
+            "forget_password": "Password's token sent to your email successsfully.",
+            "create_ad": "Ad created successfully.",
+            "edit_ad": "Ad edited successfully.",
+            "report": "Report submitted successfully.",
+            "profile_management": "Changes saved successfully.",
+            "copy_phone_number": "Seller's phone mumber copied successfully.",
+            "user_management": {
+                "block_user": "User banned successfully.",
+                "admin_user": "User become admin successfully."
+            },
+            "ad_management": {
+                "status_change": "Ad's status changed successfully",
+                "delete": "Ad deleted successfully.",
+                "edit": "Ad edited successfully."
+            }
+        }
+    },
+    "fa": {
+        "brand_name": "کالادو",
+        "currency": "تومان",
+        "general_inputs": {
+            "email": "ایمیل",
+            "password": "رمز عبور",
+            "password_repeat": "تکرار رمز عبور",
+            "phone_number": "شماره تلفن",
+            "first_name": "نام",
+            "last_name": "نام خانوادگی",
+            "price": "قیمت",
+            "date": "تاریخ",
+            "code": "کد تأیید",
+            "add_image": "افزودن عکس",
+            "description": "توضیحات",
+            "category": "دسته‌بندی",
+            "no_option": "بدون گزینه",
+            "token": "توکن"
+        },
+        "navbar": {
+            "home_link": "خانه",
+            "login_link": "ورود/ثبت‌نام",
+            "reservation_link": "ثبت سفارش",
+            "contact_link": "تماس با ما"
+        },
+        "login_page": {
+            "title": "ورود",
+            "login_with_password": "ورود با رمز عبور",
+            "login_with_sms": "ورود با کد یک بار مصرف",
+            "login_btn": "ورود",
+            "send_sms": "فرستادن کد",
+            "sms_code": "کد ارسالی"
+        },
+        "category": {
+            "title": "دسته‌بندی‌ها",
+            "one": "املاک",
+            "two": "وسایل نقلیه",
+            "three": "خانه و آشپزخانه",
+            "four": "کالای دیجیتال",
+            "five": "سرگرمی",
+            "six": "لوازم شخصی",
+            "seven": "سایر موارد"
+        },
+        "filter": {
+            "title": "فیلترها",
+            "price": "قیمت",
+            "min_price": "حداقل",
+            "max_price": "حداکثر",
+            "ad_date": "قدمت آگهی",
+            "one_day": "یک روز",
+            "one_week": "یک هفته",
+            "one_month": "یک ماه",
+            "apply": "اعمال فیلتر"
+        },
+        "sort": {
+            "newest": "جدیدترین",
+            "oldest": "قدیمی‌ترین",
+            "most_expensive": "گران‌ترین",
+            "cheapest": "ارزان‌ترین"
+        },
+        "error": {
+            "general": "خطای سیستمی رخ داده، لطفا دوباره امتحان نمایید.",
+            "input": {
+                "invalid_email": "لطفاً یک ایمیل معتبر وارد کنید.",
+                "invalid_password": {
+                    "min_length": "رمز عبور باید حداقل ۸ کاراکتر داشته باشد.",
+                    "has_number": "رمز عبور باید حداقل یک عدد داشته باشد.",
+                    "has_uppercase": "رمز عبور باید حداقل یک حرف بزرگ داشته باشد.",
+                    "has_special_char": "رمز عبور باید حداقل یک کاراکتر ویژه داشته باشد."
+                },
+                "invalid_phone_number": "لطفاً یک شماره تلفن معتبر وارد کنید.",
+                "invalid_image": {
+                    "max_size": "حجم فایل نباید بیشتر از 1 مگابایت باشد.",
+                    "invalid_type": "فقط فایل‌های تصویری مجاز هستند."
+                }
+            },
+            "login": {
+                "not_verified": "برای ورود، ابتدا ایمیل خود را تایید کنید.",
+                "incorrect_password": "رمز عبور وارد شده اشتباه است. لطفا دوباره تلاش کنید.",
+                "user_not_found": "چنین کاربری در سیستم وجود ندارد."
+            },
+            "landing": {
+                "empty_product_list": "در دسته‌بندی انتخاب‌شده هیچ آگهی‌ای ثبت نشده است.",
+                "error_get_product": "خطایی در گرفتن آگهی‌ها رخ داده است."
+            },
+            "server": {
+                "401": "شما مجوز این کار را ندارید.",
+                "403": "دسترسی رد شد.",
+                "404": "منبع مورد نظر پیدا نشد.",
+                "409": "این ایمیل در سیستم ثبت‌نام شده است.",
+                "500": "خطای سیستمی رخ داده، لطفا دوباره امتحان نمایید."
+            }
+        },
+        "success": {
+            "signup": "ثبت‌نام شما با موفقیت انجام شد. لطفا ایمیل خود را تایید نمایید.",
+            "code_verification": "ایمیل شما با موفقیت تایید شد.",
+            "login": "خوش آمدید!",
+            "reset_password": "رمز عبور شما با موفقیت تغییر کرد.",
+            "forget_password": "توکن رمز عبور با موفقیت به ایمیل شما ارسال شد.",
+            "create_ad": "آگهی شما با موفقیت ثبت شد.",
+            "edit_ad": "آگهی شما با موفقیت ویرایش شد.",
+            "report": "گزارش تخلف شما با موفقیت ثبت شد.",
+            "profile_management": "تغییرات شما با موفقیت ذخیره شد.",
+            "copy_phone_number": "شماره تلفن خریدار با موفقیت کپی شد.",
+            "user_management": {
+                "block_user": "کاربر با موفقیت مسدود شد.",
+                "admin_user": "کاربر با موفقیت ادمین شد."
+            },
+            "ad_management": {
+                "status_change": "وضعیت آگهی با موفقیت تغییر کرد.",
+                "delete": "آگهی با موفقیت حذف شد.",
+                "edit": "آگهی با موفقیت ویرایش شد."
+            }
+        }
+    }
+}
