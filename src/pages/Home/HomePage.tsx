@@ -17,39 +17,44 @@ import sponsor from '../../assets/images/oil.png';
 
 const HomePage: React.FC = () => {
     const [timeLeft, setTimeLeft] = useState({
-        days: '',
-        hours: '',
-        minutes: '',
-        seconds: ''
+        days: 0,
+        hours: 0,
+        minutes: 0,
+        seconds: 0
     });
 
     // Calculate days left until the Olympiad
-    useEffect(() => {
-        const startDate = new Date("2025-02-10T00:00:00+0330");
-        const intervalId = setInterval(() => {
-            const today = new Date();
-            if (today > startDate) return clearInterval(intervalId);
+    // useEffect(() => {
+    //     const startDate = new Date("2025-02-10T00:00:00+0330");
 
-            const diffTime = startDate.getTime() - today.getTime();
-            let diffDays = Math.floor(diffTime / (1000 * 60 * 60 * 24));
-            let remainingTimeInMs = diffTime % (1000 * 60 * 60 * 24);
-            let diffHours = Math.floor(remainingTimeInMs / (1000 * 60 * 60));
-            remainingTimeInMs %= (1000 * 60 * 60);
-            let diffMinutes = Math.floor(remainingTimeInMs / (1000 * 60));
-            remainingTimeInMs %= (1000 * 60);
-            let diffSeconds = Math.ceil(remainingTimeInMs / (1000));
+    //     // Convert start date into milliseconds since Unix Epoch for consistency.
+    //     const startDateInMs = startDate.getTime();
 
-            setTimeLeft({
-                days: diffDays < -1 ? 'Event Started' : String(diffDays),
-                hours: String(diffHours).padStart(2, '0'),
-                minutes: String(diffMinutes).padStart(2, '0'),
-                seconds: String(diffSeconds).padStart(2, '0')
-            });
-        }, [startDate]);
+    //     const intervalId = setInterval(() => {
+    //         const today = new Date();
+    //         if (today > startDate) return clearInterval(intervalId);
 
-        return () => clearInterval(intervalId); // Clear interval when component unmounts.
+    //         const diffTimeInMs = startDateInMs - today.getTime();
+    //         let diffDays = Math.floor(diffTimeInMs / (1000 * 60 * 60 * 24));
+    //         let remainingTimeInMs = diffTimeInMs % (1000 * 60 * 60 * 24);
+    //         let diffHours = Math.floor(remainingTimeInMs / (1000 * 60 * 60));
+    //         remainingTimeInMs %= (1000 * 60 * 60);
+    //         let diffMinutes = Math.floor(remainingTimeInMs / (1000 * 60));
+    //         remainingTimeInMs %= (1000 * 60);
+    //         let diffSeconds = Math.ceil(remainingTimeInMs / (1000));
 
-    }, []);
+    //         setTimeLeft({
+    //             days: diffDays < -1 ? 'Event Started' : String(diffDays),
+    //             hours: String(diffHours).padStart(2, '0'),
+    //             minutes: String(diffMinutes).padStart(2, '0'),
+    //             seconds: String(diffSeconds).padStart(2, '0')
+    //         });
+
+    //     }, []);
+
+    //     return () => clearInterval(intervalId); // Clear interval when component unmounts.
+
+    // }, []); // Removed [startDate] since it doesn't change.
 
     // Sample data
     const reviews = [
