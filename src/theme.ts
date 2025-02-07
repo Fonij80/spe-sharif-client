@@ -79,14 +79,6 @@ export const lightTheme = createTheme({
                 },
             },
         },
-        MuiBox: {
-            styleOverrides: {
-                root: {
-                    backgroundColor: '#fff99f', // Set Box background color for dark mode
-                },
-            },
-        },
-
     },
 });
 
@@ -140,14 +132,6 @@ export const darkTheme = createTheme({
                 },
                 sizeSmall: {
                     fontSize: '1.2rem',
-                },
-            },
-        },
-        MuiBox: {
-            styleOverrides: {
-                root: {
-                    backgroundColor: '#272C48', // Set Box background color for dark mode
-                    // color: 'inherit', // Inherit text color, can be overridden by child components
                 },
             },
         },
