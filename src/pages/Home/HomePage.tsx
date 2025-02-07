@@ -16,15 +16,39 @@ import avatar from '../../assets/images/avatar.png';
 import sponsor from '../../assets/images/oil.png';
 
 const HomePage: React.FC = () => {
-    const [daysLeft, setDaysLeft] = useState<number>(0);
+    const [timeLeft, setTimeLeft] = useState({
+        days: '',
+        hours: '',
+        minutes: '',
+        seconds: ''
+    });
 
     // Calculate days left until the Olympiad
     useEffect(() => {
         const startDate = new Date("2025-02-10T00:00:00+0330");
-        const today = new Date();
-        const diffTime = startDate.getTime() - today.getTime();
-        const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
-        setDaysLeft(diffDays);
+        const intervalId = setInterval(() => {
+            const today = new Date();
+            if (today > startDate) return clearInterval(intervalId);
+
+            const diffTime = startDate.getTime() - today.getTime();
+            let diffDays = Math.floor(diffTime / (1000 * 60 * 60 * 24));
+            let remainingTimeInMs = diffTime % (1000 * 60 * 60 * 24);
+            let diffHours = Math.floor(remainingTimeInMs / (1000 * 60 * 60));
+            remainingTimeInMs %= (1000 * 60 * 60);
+            let diffMinutes = Math.floor(remainingTimeInMs / (1000 * 60));
+            remainingTimeInMs %= (1000 * 60);
+            let diffSeconds = Math.ceil(remainingTimeInMs / (1000));
+
+            setTimeLeft({
+                days: diffDays < -1 ? 'Event Started' : String(diffDays),
+                hours: String(diffHours).padStart(2, '0'),
+                minutes: String(diffMinutes).padStart(2, '0'),
+                seconds: String(diffSeconds).padStart(2, '0')
+            });
+        }, [startDate]);
+
+        return () => clearInterval(intervalId); // Clear interval when component unmounts.
+
     }, []);
 
     // Sample data
@@ -55,9 +79,12 @@ const HomePage: React.FC = () => {
 
             {/* Banner Section */}
             <Box sx={{ textAlign: "center", my: 4 }}>
-                <img src={img1} alt="Banner Image" style={{ width: "100%", maxHeight: "300px" }} />
+                <img src={img1} alt="Banner Image" style={{ width: "100%", maxHeight: "500px" }} />
                 <Typography variant="h4" sx={{ mt: 2 }}>
-                    {daysLeft} days until the Olympiad!
+                    {timeLeft.days === 'Event Started' ?
+                        (timeLeft.days) :
+                        (`${timeLeft.hours}:${timeLeft.minutes}:${timeLeft.seconds}`)}
+                    مانده به المپیاد
                 </Typography>
             </Box>
 

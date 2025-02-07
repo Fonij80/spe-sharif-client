@@ -64,7 +64,7 @@ export const lightTheme = createTheme({
                         color: 'lightgray', // Placeholder color
                         opacity: 1,
                     },
-                    fontSize: '2rem', // Set the desired font size for input fields
+                    fontSize: '1rem', // Set the desired font size for input fields
                 },
                 notchedOutline: {
                     borderColor: 'lightgray', // Optional styling for the outline

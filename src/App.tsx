@@ -3,7 +3,7 @@ import { I18nextProvider } from 'react-i18next';
 import i18n from './i18n';
 import { ThemeProvider } from '@mui/material/styles';
 import CssBaseline from '@mui/material/CssBaseline';
-import { HomePage } from './pages';
+import { HomePage, LoginPage } from './pages';
 import { lightTheme } from './theme';
 import './App.css';
 
@@ -15,9 +15,9 @@ function App() {
         <Router>
           <Routes>
             <Route path="/spe-sharif-client" element={<HomePage />} />
-            {/* <Route path="/login" element={<LoginPage />} />
-              <Route path="/reserve" element={<ReservationPage />} />
-              <Route path="/contact" element={<ContactPage />} /> */}
+            <Route path="/login" element={<LoginPage />} />
+            {/* <Route path="/reserve" element={<ReservationPage />} />
+            <Route path="/contact" element={<ContactPage />} /> */}
           </Routes>
         </Router>
       </I18nextProvider>

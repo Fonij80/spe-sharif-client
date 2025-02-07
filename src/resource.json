@@ -105,7 +105,7 @@
         }
     },
     "fa": {
-        "brand_name": "کالادو",
+        "brand_name": "اویلیمپیک",
         "currency": "تومان",
         "general_inputs": {
             "email": "ایمیل",
@@ -125,9 +125,9 @@
         },
         "navbar": {
             "home_link": "خانه",
-            "login_link": "ورود/ثبت‌نام",
-            "reservation_link": "ثبت سفارش",
-            "contact_link": "تماس با ما"
+            "register_link": "ثبت‌نام",
+            "blog_link": "بلاگ",
+            "contact_link": "ارتباط با ما"
         },
         "login_page": {
             "title": "ورود",
