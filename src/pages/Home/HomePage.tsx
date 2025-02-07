@@ -14,6 +14,8 @@ import {
 } from "@mui/material";
 import { Navbar } from '../../components/organisms';
 import img1 from '../../assets/images/img1.jpg';
+import avatar from '../../assets/images/avatar.png';
+import sponsor from '../../assets/images/oil.png';
 
 const HomePage: React.FC = () => {
     const [daysLeft, setDaysLeft] = useState<number>(0);
@@ -39,13 +41,13 @@ const HomePage: React.FC = () => {
     ];
 
     const staff = [
-        { name: "Alice Johnson", role: "Event Coordinator", image: img1 },
-        { name: "Bob Brown", role: "Technical Lead", image: img1 },
+        { name: "Alice Johnson", role: "Event Coordinator", image: avatar },
+        { name: "Bob Brown", role: "Technical Lead", image: avatar },
     ];
 
     const sponsors = [
-        { name: "Company A", logo: img1 },
-        { name: "Company B", logo: img1 },
+        { name: "Company A", logo: sponsor },
+        { name: "Company B", logo: sponsor },
     ];
 
     return (
@@ -102,7 +104,7 @@ const HomePage: React.FC = () => {
                     {staff.map((member) => (
                         <Grid item xs={12} sm={6} md={4} key={member.name}>
                             <Card>
-                                <CardMedia component="img" image={member.image} alt={member.name} height="140" />
+                                <CardMedia component="img" image={member.image} alt={member.name} />
                                 <CardContent>
                                     <Typography variant="h6">{member.name}</Typography>
                                     <Typography variant="subtitle1">{member.role}</Typography>
